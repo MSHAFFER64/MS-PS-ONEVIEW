@@ -30,7 +30,7 @@ THE SOFTWARE.
 #>
 ##############################################################################
 
-Write-Host `n"Select PS CmdLet Module to Import HPOneView.410 or HPOneView.420"`n $ncVer -ForeGroundColor Cyan 
+Write-Host `n"Select PS CmdLet Module to Import HPOneView.410, HPOneView.420 or HPOneView.500"`n $ncVer -ForeGroundColor Cyan 
 Write-Host -NoNewLine "<" -foregroundcolor Magenta
 Write-Host -NoNewLine "Select PS Module"
 Write-Host -NoNewLine ">"`n -foregroundcolor Magenta
@@ -88,7 +88,7 @@ $mod = Read-Host "Which Module to Load (1 or 2 or 3)?"
 # First connect to the HP OneView appliance if not already connected.
 if (-not $ConnectedSessions)  
 {
-    Write-Host -NoNewLine `n`n"Connect to Applaiance"`n`n 
+    Write-Host -NoNewLine `n`n"Connect to Appliance"`n`n 
 	
     $Appliance = Read-Host 'ApplianceName or IP'
 	$Username  = Read-Host 'Username'
